@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="majorproject2017.trackingapp.RegisterActivity">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/logoImg"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_marginBottom="274dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:hint="Enter Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/logoImg"
+        android:layout_alignStart="@+id/logoImg"
+        android:layout_marginBottom="201dp"
+        android:id="@+id/etRegUser" />
+
+    <EditText
+        android:hint="Enter Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPass"
+        android:layout_alignTop="@+id/etRegUser"
+        android:layout_alignLeft="@+id/etRegUser"
+        android:layout_alignStart="@+id/etRegUser"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerButton"
+        android:layout_below="@+id/etRegConfPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:hint="Confirm Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="53dp"
+        android:id="@+id/etRegConfPass"
+        android:layout_alignTop="@+id/etPass"
+        android:layout_alignLeft="@+id/etPass"
+        android:layout_alignStart="@+id/etPass" />
+
+</RelativeLayout>
